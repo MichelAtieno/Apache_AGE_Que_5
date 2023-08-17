@@ -25,3 +25,10 @@ def login_user(request):
         }
     
         return render(request, 'registration/login.html', context)
+    
+def logout_user(request):
+    logout(request)
+    messages.success(request, ("You were logged out."))
+
+    return redirect('home')
+    
