@@ -22,3 +22,4 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
     path('', include("apache_age_app.urls", namespace="apache_age_app")),
 ]
+
