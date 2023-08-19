@@ -1,80 +1,169 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
-    <ul>
-       
-            {% if user.is_authenticated %}
-            <li>
-                <a href="{% url 'logout' %}">
-                    Logout
-                </a>
-            </li>
-            {% else %}
-            <li>
-                <a href="{% url 'login' %}">
-                    Login
-                </a>
-            </li>
-            {% endif %}
-        
-    </ul>
+<div class="home-page">
+    
 
-    <div>
+    <section class="section-1">
         <div>
             <img src="https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png" class="attachment-large size-large" alt="" srcset="https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png 301w, https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo-300x61.png 300w" sizes="(max-width: 301px) 100vw, 301px" width="301" height="61">
         </div>
 
-        <div>
+        <div class="section-1-content">
             <h4><b>An integration of Bitnine's DB technology and PG expertise.</b></h4>
+            <div class="section-1-content-paragraph">
             <p>AgensSQL is an all-new relational DBMS based on POSTGRESQL, with years of expertise and knowledge accumulated through database research and development.</p>
             <p>The enterprise package, along with AgensSQL engine, is an all-in-one solution that ensures the effeciency and scalability of data management.</p>
             <p>Get AgensSQL now for stable operation and management services at a reduced maintenance cost.</p>
-            <a href="">Contact</a>
-            <a href="">Brochure</a>
-            <a href="">Blog</a>
+            </div>
+            <div>
+                <a href="">Contact</a>
+                <a href="">Brochure</a>
+                <a href="">Blog</a>
+            </div>
         </div>
-    </div>
+    </section>
 
     <br>
-    <div>
+    <div class="section-2" style="text-align: center;">
         <img src="https://bitnine.net/wp-content/uploads/2022/04/img_diagram_eng-e1651143428347.png" class="attachment-full size-full" alt="" width="900" height="752"> 
     </div>
 
     <br>
-    <div>
+    <div class="section-3">
         <h4>Key features</h4>
         <p>Manage your data with Agens Enterprise Package.</p>
         <p>Essential enterprise features such as high availability and sharding are provided</p>
-        <div>
-            <img src="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png" class="attachment-full size-full" alt="" srcset="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png 4584w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-300x118.png 300w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-768x302.png 768w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-1024x402.png 1024w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-600x236.png 600w" sizes="(max-width: 4584px) 100vw, 4584px" width="4584" height="1801">
-        </div>
+        <img src="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png" class="attachment-full size-full" alt="" srcset="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png 4584w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-300x118.png 300w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-768x302.png 768w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-1024x402.png 1024w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-600x236.png 600w">
     </div>
 
     <br>
-    <div>
-        <h4><b>AgensSQL DB Engine</b></h4>
-        <h5>Enhanced Data Security</h5>
+    <div class="section-4">
+        <h2><b>AgensSQL DB Engine</b></h2>
+        <h4>Enhanced Data Security</h4>
         <p>AgensSQL is a PostgreSQL-based DBMS that guarantees optimal security and stability.</p>
+      
+        <div class="row">
+            <div class="col-md-4"><p>user password policy reinforces login security</p></div>
+            <div class="col-md-4"><p>excessive failed login attempts lock an account</p></div>
+            <div class="col-md-4"><p>define rules for password complexity</p></div>
+        </div>
+        
     </div>
 
     <br>
-    <div>
-        <h4><b>Agens Enterprise Package</b></h4>
+    <div class="section-5">
+        <h2><b>Agens Enterprise Package</b></h2>
         <p>Agens Enterprise Package comes with a high availability management server that supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently.</p>
-        <p><b>Agens HA Manager</b></p>
-        <p>HA Clustering - Failover/Failback, Load-balancing</p>
-        <div>
-            <img src="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png" class="attachment-large size-large" alt="" srcset="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png 1024w, https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-300x270.png 300w, https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-768x691.png 768w, https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-600x540.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="922">
+        <div class="row">
+            <div class="col-md-6">
+                <p><b>Agens HA Manager</b></p>
+                <p>HA Clustering - Failover/Failback, Load-balancing</p>
+                <img src="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png" class="attachment-large size-large" alt="" srcset="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png 1024w, https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-300x270.png 300w, https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-768x691.png 768w, https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-600x540.png 600w">
+                <p>Replication</p>
+            </div>
+            <div class="col-md-6">
+                <p><b>Agens Enterprise Manager</b></p>
+                <ul>
+                    <li>
+                        Backup/Restore
+                    </li>
+                    <li>
+                        <p>DB Monitoring Dashboard</p>
+                    </li>
+                    <li>
+                        <p>Schedule Management</p>
+                    </li>
+                    <li>
+                        <p>DB Monitoring Dashboard</p>
+                    </li>
+                    <li>
+                        <p>Database Audit</p>
+                    </li>
+                    <li>
+                        <p>SQL Monitoring</p>
+                    </li>
+                    <li>
+                        <p>Performance Management</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <br>
-    <div>
-        <p><b>Agens Enterprise Manager</b></p>
-    </div>
-    <footer>
 
-        
-    </footer>
+    <br>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-2">
+                <p>PRODUCTS</p>
+                <ul>
+                    <li>Relational Database</li>
+                    <li>Graph Database</li>
+                    <li>Graph-based Solution</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <p>USE CASES</p>
+            </div>
+            <div class="col-md-2">
+                <p>SERVICES</p>
+            </div>
+            <div class="col-md-2">
+                <p>RESOURCES</p>
+                <ul>
+                    <li>Documentation</li>
+                    <li>Learn</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <p>BLOG</p>
+            </div>
+            <div class="col-md-2">
+                <p>COMPANY</p>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="copyright">
+                <p>2023 by Bitnine Global Inc. All Rights Reserved.</p>
+            </div>
+            <div class="social-media-links">
+                <ul>
+                    <li>
+                        <a class="" target="_blank" href="https://github.com/bitnine-oss/agensgraph">
+                            <span><i class="fa-brands fa-github"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" target="_blank" href="https://www.youtube.com/channel/UCBJNYamALEqrfxiOCgYyP2g/featured?view_as=subscriber">
+                            <span><i class="fa-brands fa-youtube"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="w-socials-item-link" target="_blank" href="https://www.linkedin.com/company/bitnineglobal/">
+                            <span><i class="fa-brands fa-linkedin-in"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="w-socials-item-link" target="_blank" href="https://www.facebook.com/bitninesns/">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="w-socials-item-link" target="_blank" href="https://blog.naver.com/bitnine9">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
 </div>
 {% endblock %}

@@ -1,0 +1,80 @@
+<nav class="navbar">
+    <div class="content">
+        <div class="content1">
+            <div>
+                <p>Search</p>
+            </div>
+            <div>
+                <ul>
+        
+                    {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'logout' %}">
+                            Logout
+                        </a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{% url 'login' %}">
+                            Login
+                        </a>
+                    </li>
+                    {% endif %}
+                
+                </ul>
+            </div>
+            <div>
+                <a href="https://bitnine.net/contact/" id="menu-item-21643"><span>CONTACT</span></a>
+            </div>
+            <div class="social-media-links">
+            <ul>
+                <li>
+                    <a class="" target="_blank" href="https://github.com/bitnine-oss/agensgraph">
+                        <span><i class="fa-brands fa-github"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="" target="_blank" href="https://www.youtube.com/channel/UCBJNYamALEqrfxiOCgYyP2g/featured?view_as=subscriber">
+                        <span><i class="fa-brands fa-youtube"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="w-socials-item-link" target="_blank" href="https://www.linkedin.com/company/bitnineglobal/">
+                        <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="w-socials-item-link" target="_blank" href="https://www.facebook.com/bitninesns/">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="w-socials-item-link" target="_blank" href="https://blog.naver.com/bitnine9">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="content2">
+            <div class="logo">
+                <a href="#">
+                    <img class="for_default" src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png" alt="" width="235" height="61">
+                </a>
+            </div>
+            <div class="navbar-items">
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">Try Free</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
