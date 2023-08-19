@@ -1,12 +1,11 @@
 <nav class="navbar">
     <div class="content">
         <div class="content1">
-            <div>
+            <div class="search">
                 <p>Search</p>
             </div>
-            <div>
+            <div class="authentication">
                 <ul>
-        
                     {% if user.is_authenticated %}
                     <li>
                         <a href="{% url 'logout' %}">
@@ -23,7 +22,7 @@
                 
                 </ul>
             </div>
-            <div>
+            <div class="contact">
                 <a href="https://bitnine.net/contact/" id="menu-item-21643"><span>CONTACT</span></a>
             </div>
             <div class="social-media-links">

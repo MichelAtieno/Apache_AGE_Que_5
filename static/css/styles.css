@@ -11,12 +11,22 @@
     padding: 0px 30px;
 }
 
+/* ---------- Navbar ----------- */
+
 .navbar {
     background: #1b1b1b;
     position: fixed;
     z-index: 5;
     width: 100%;
     padding: 10px 0;
+}
+
+.navbar .content1 .search p{
+    color: #fff;
+}
+
+.navbar .content1 .authentication li {
+    list-style: none;
 }
 
 .navbar a {
@@ -47,46 +57,103 @@
 }
 
 .home-page {
-    padding-top: 130px;
+    padding-top: 150px;
 }
 
-.home-page .section-1{
-    text-align: center;
-    padding: 10px;
+/* ---------- Section1 ----------- */
+
+.home-page .section-1 {
+    height: 100vh;
+}
+
+.home-page .section-1 .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-page .section-1 .row .section-1-content {
+    text-align: center; 
+    padding: 0px 140px 0px 140px;
     justify-content: center;
 }
 
-.section-1 .section-1-content{
-    padding: 10px;
+.home-page .section-1 .row .section-1-content img {
+    margin: 0px 0px 20px 0px;
 }
 
-.section-1 .section-1-content a {
-    text-decoration: none;
-    margin-right: 12px; 
+.home-page .section-1 .row .section-1-content .section-1-inner {
+    padding: 0px 140px 0px 100px;
 }
+
+.home-page .section-1 .section-1-content-paragraph p{
+    padding: 20px 0px 20px 0px;
+}
+
+.home-page .section-1 .row .section-1-content a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-page .section-1 .row .section-1-content ul {
+    display: inline-flex;
+    margin-top: 50px
+}
+
+.home-page .section-1 .row .section-1-content ul li {
+    list-style: none;
+    padding: 15px 40px 15px 40px;
+    background-color: rgb(2, 46, 169);
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* ---------- Section2 ----------- */
 
 .home-page .section-2 {
     text-align: center;
+    background-color: rgb(243, 246, 251);
+    height: 120vh;
+    padding: 100px 0px 150px 0px;
 }
+
+.home-page .section-2 img{
+    width: 900px;
+    height: 650px;
+}
+
+
+/* ---------- Section3 ----------- */
 
 .home-page .section-3 {
     text-align: center;
-    padding: 10px;
+    padding: 60px 0px 60px 0px;
     justify-content: center;
 } 
 
-.home-page .section-3 h4, p {
-    padding: 10px;
+
+
+.home-page .section-3 h2 {
+    padding: 10px 0px 15px 0px;
+}
+
+.home-page .section-3 p {
+    padding: 5px;
 }
 
 .home-page .section-3 img {
+    /* width: 170vh;
+    height: 80vh; */
+    padding-top: 20px;
     width: 170vh;
-    height: 80vh;
-    padding-top: 10px;
+    height: 70vh;
 }
+
+/* ---------- Section4 ----------- */
 
 .home-page .section-4 {
     text-align: center;
+    background-color: rgb(243, 246, 251);
+    padding: 50px 0px 50px 0px;
 }
 
 .home-page .section-4 h2, h4, p {
@@ -105,12 +172,24 @@
 
 .home-page .section-4 .col-md-4 {
     width: 350px;
-    height: 200px;
-    background-color: grey;
+    height: 250px;
+    background-color: #fff;
     margin-right: 20px;
-    border-radius: 5px;
+    border: 1.5px solid rgb(232, 232, 232);
+    border-radius: 10px;
     text-align: center;
+    padding: 40px 30px 50px 30px;
+
 }
+
+.home-page .section-4 .col-md-4 img {
+    width: 230px;
+    height: 150px;
+}
+
+
+
+/* ---------- Section5 ----------- */
 
 .home-page .section-5 {
    text-align: center;
@@ -119,6 +198,16 @@
 .home-page .section-5 .row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.home-page .section-5 .col-md-10 {
+    padding: 0px 140px 0px 140px;
+    justify-content: center;
+}
+
+.home-page .section-5 .col-md-10 p {
+    padding: 5px 80px 5px 80px;
     justify-content: center;
 }
 
@@ -154,6 +243,8 @@
     justify-content: space-evenly;
     
 }
+
+/* ---------- Footer ----------- */
 
 .home-page .footer .row .col-md-2 p {
     color: #fff
