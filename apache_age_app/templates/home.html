@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <div class="home-page">
     <div class="section-1">
@@ -69,12 +70,9 @@
     <br>
     <div class="section-5">
         <div class="row">
-            <div class="col-md-1">
-                
-            </div>
-            <div class="col-md-10">
+            <div class="col-md-12">
                 <h2>Agens Enterprise Package</h2>
-                <p>Agens Enterprise Package comes with a high availability management server that supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently.</p>
+                <p class="section-5-content" style="padding: 10px 150px 0px 150px; color: rgb(102, 102, 102);">Agens Enterprise Package comes with a high availability management server that supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently.</p>
                 <div class="row">
                     <div class="col-md-6">
                         <p><b>Agens HA Manager</b></p>
@@ -84,9 +82,102 @@
                     </div>
                     <div class="col-md-6">
                         <p><b>Agens Enterprise Manager</b></p>
-                        <ul>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="front">
+                                        <p>Backup/Restore</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>provides a convenient interface for backup & restore</p></li>
+                                            <li><p>provides backup & restore features for DB and table objects</p></li>
+                                        </ul>            
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="front">
+                                        <p>DB Monitoring Dashboard</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>monitors real-time session & transaction lock</p></li>
+                                            <li><p>provides status for server CPU & memory</p></li>
+                                        </ul>            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="front">
+                                        <p>Schedule Management</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>provides module for script, SQL job and scheduling management</p></li>
+                                            <li><p>provides UX dedicated to scheduling</p></li>
+                                        </ul>            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="front">
+                                        <p>Database Audit</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>enables auditing via user interface</p></li>
+                                            <li><p>view audit results via user interface</p></li>
+                                        </ul>            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="front">
+                                        <p>SQL Monitoring</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>collects query statistics required for performance analysis</p></li>
+                                            <li><p>extracts monitoring results in query</p></li>
+                                        </ul>            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="front">
+                                        <p>Performance Management</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>monitors and collects operation status and statistical data</p></li>
+                                            <li><p>provides status reports required for improving performance</p></li>
+                                        </ul>            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <ul>
                             <li>
-                                Backup/Restore
+                                
+                                    <div class="front">
+                                        <p>Backup/Restore</p>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li><p>Provides a convenient interface for backup & restore</p>
+                                            <p>Provides backup & restore features for DB and table objects</p></li>
+                                        </ul>
+                            
+                                        
+                                    </div>
+                                
                             </li>
                             <li>
                                 <p>DB Monitoring Dashboard</p>
@@ -105,14 +196,12 @@
                             </li>
                             <li>
                                 <p>Performance Management</p>
-                            </li>
-                        </ul>
+                            </li> 
+                        </ul> -->
                     </div>
                 </div>
             </div>
-            <div class="col-md-1">
-                
-            </div>
+           
         </div>
         
         
@@ -122,34 +211,41 @@
     <div class="footer">
         <div class="row">
             <div class="col-md-2">
-                <p>PRODUCTS</p>
                 <ul>
-                    <li>Relational Database</li>
-                    <li>Graph Database</li>
-                    <li>Graph-based Solution</li>
+                    <li>PRODUCTS</li>
+                    <li><a href="">Relational Database</a></li>
+                    <li><a href="">Graph Database</a></li>
+                    <li><a href="">Graph-based Solution</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
-                <p>USE CASES</p>
-            </div>
-            <div class="col-md-2">
-                <p>SERVICES</p>
-            </div>
-            <div class="col-md-2">
-                <p>RESOURCES</p>
                 <ul>
-                    <li>Documentation</li>
-                    <li>Learn</li>
+                    <li><a href="">USE CASES</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
-                <p>BLOG</p>
+                <ul>
+                    <li><a href="">SERVICES</a></li>
+                </ul>
             </div>
             <div class="col-md-2">
-                <p>COMPANY</p>
+                
                 <ul>
-                    <li>About us</li>
-                    <li>Contact</li>
+                    <li>RESOURCES</li>
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Learn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul>
+                    <li><a href="">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul>
+                    <li>COMPANY</li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
             
