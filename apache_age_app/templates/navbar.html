@@ -29,27 +29,27 @@
             <ul>
                 <li>
                     <a class="" target="_blank" href="https://github.com/bitnine-oss/agensgraph">
-                        <span><i class="fa-brands fa-github"></i></span>
+                        <span><i class="fab fa-github"></i></span>
                     </a>
                 </li>
                 <li>
                     <a class="" target="_blank" href="https://www.youtube.com/channel/UCBJNYamALEqrfxiOCgYyP2g/featured?view_as=subscriber">
-                        <span><i class="fa-brands fa-youtube"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
                     </a>
                 </li>
                 <li>
                     <a class="w-socials-item-link" target="_blank" href="https://www.linkedin.com/company/bitnineglobal/">
-                        <span><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span><i class='fab fa-linkedin-in'></i></span>
                     </a>
                 </li>
                 <li>
                     <a class="w-socials-item-link" target="_blank" href="https://www.facebook.com/bitninesns/">
-                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fab fa-facebook"></i></span>
                     </a>
                 </li>
                 <li>
                     <a class="w-socials-item-link" target="_blank" href="https://blog.naver.com/bitnine9">
-                        <span></span>
+                        <span> <i class="fab fa-medium"></i></span>
                     </a>
                 </li>
             </ul>
@@ -63,17 +63,70 @@
                 </a>
             </div>
             <div class="navbar-items">
+                <div class="icon cancel-btn">
+                    <a><i class="fas fa-times"></i></a>
+                </div>
                 <ul>
-                    <li><a href="#">Products</a></li>
+                    <li>
+                        <a href="#">Products </a>
+                        <!-- <ul>
+                            <li>
+                                <a href="#">Graph Database</a>
+                                <ul>
+                                    <li><a href="#">AgensGraph</a></li>
+                                    <li><a href="#">Apache AGE</a></li>
+                                    <li><a href="#">AG Cloud</a></li>
+                                    <li><a href="#">Visualization and Analytics</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Relational Database </a>
+                                <ul>
+                                    <li><li><a href="#">AgensSQL</a></li></li>
+                                </ul>
+                            </li>
+                        </ul> -->
+                    </li>
                     <li><a href="#">Use Cases</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Company</a></li>
                     <li><a href="#">IR</a></li>
-                    <li><a href="#">Try Free</a></li>
+                    <li><a href="#" id="try_free">Try Free</a></li>
                 </ul>
+                
             </div>
+            <div class="icon menu-btn">
+               <a><i class="fas fa-bars"></i></a>
+            </div>
+            
+
         </div>
+
+        
     </div>
 </nav>
+
+<script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".navbar-items");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn")
+    
+    menuBtn.onclick = ()=> {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        menuBtn.classList.remove("active");
+    }
+
+    cancelBtn.onclick = ()=> {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+    }
+
+    window.onscroll = () => {
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+</script>
