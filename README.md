@@ -8,7 +8,7 @@
     <li>View a webpage similar to Bitnine's official website https://bitnine.net/</li>
 <ul>
 
-
+### Website link
 You can view the project here:
 https://bitnine-render-app.onrender.com/
 
@@ -26,7 +26,7 @@ You can run the project locally by following the steps below:
     <li>Prepare environment variables. You can find the modules required for project on the requirments.txt file</li>
     <li>Run Database Migrations</li>
     <li>Run the app in development</li>
-    <li>Open the browser on `http://localhost:8000/` by running 'python3.10 manage.py runserver' on terminal</li>
+    <li>Open the browser on `https://localhost:8000/` by running 'python3.10 manage.py runserver' on terminal</li>
 <ul>            
 
 ## Known bugs
