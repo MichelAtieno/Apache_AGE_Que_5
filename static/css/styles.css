@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Monda", "Noto Sans KR", sans-serif;
+    font-family: Monda, "Noto Sans KR", sans-serif;
 }
 
 .content {
@@ -19,7 +19,7 @@
     z-index: 5;
     width: 100%;
     padding: 10px 0;
-    transition: all 0.3s ease;
+    transition: all 0.75s ease;
 }
 
 .navbar.sticky {
@@ -77,6 +77,12 @@
     display: none;
 }
 
+.navbar .content2 .logo img {
+    width: 235px;
+    height: 61px;
+}
+
+
 #try_free {
     background-color: #022EA9;
     padding: 5px 8px 5px 8px;
@@ -108,15 +114,28 @@
 
 .home-page .section-1 .row .section-1-content img {
     margin: 0px 0px 20px 0px;
+    width: 301px;
+    height: 61px;
 }
 
 .home-page .section-1 .row .section-1-content .section-1-inner {
     padding: 0px 140px 0px 100px;
 }
 
+.home-page .section-1 .row .section-1-content .section-1-inner h3 {
+    color: rgb(68, 68, 68);
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 25.2px;
+}
+
 .home-page .section-1 .section-1-content-paragraph p{
     padding: 20px 0px 20px 0px;
     color: rgb(102, 102, 102);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .home-page .section-1 .row .section-1-content a{
@@ -126,14 +145,20 @@
 
 .home-page .section-1 .row .section-1-content ul {
     display: inline-flex;
-    margin-top: 50px
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 39.2px;
+    text-transform: uppercase;
+
 }
 
 .home-page .section-1 .row .section-1-content ul li {
     list-style: none;
-    padding: 15px 40px 15px 40px;
+    padding: 8px 40px 8px 40px;
     background-color: rgb(2, 46, 169);
-    margin-left: 20px;
+    margin-left: 25px;
     border-radius: 10px;
 }
 
@@ -142,6 +167,7 @@
 .home-page .section-2 {
     text-align: center;
     background-color: rgb(243, 246, 251);
+    background-size: cover;
     height: 120vh;
     padding: 100px 0px 150px 0px;
 }
@@ -167,6 +193,9 @@
 .home-page .section-3 p {
     padding: 5px;
     color:rgb(102, 102, 102);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .home-page .section-3 img {
@@ -182,11 +211,13 @@
 .home-page .section-4 {
     text-align: center;
     background-color: rgb(243, 246, 251);
+    background-size: cover;
     padding: 50px 0px 50px 0px;
 }
 
 .home-page .section-4 h2, h4, p {
     padding: 10px;
+
 }
 
 .home-page .section-4 h4 {
@@ -195,6 +226,9 @@
 
 .home-page .section-4 p {
     color:rgb(102, 102, 102);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .home-page .section-4 h4 {
@@ -216,8 +250,8 @@
     border-radius: 10px;
     text-align: center;
     padding: 40px 30px 50px 30px;
-    box-shadow: 0 7px 10px rgb(68, 68, 68);
-    transition: 0.5s ease-in-out;
+    box-shadow: 0 1px 1px rgb(68, 68, 68);
+    transition: 0.7s ease-in-out;
 }
 
 .home-page .section-4 .row .col-md-4 .card {
@@ -281,9 +315,19 @@
     justify-content: center;
 }
 
+.home-page .section-5 .row .col-md-12 h2 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 28.6px;
+}
+
 .home-page .section-5 .row .col-md-12 .section-5-content {
     padding: 10px 150px 0px 150px;
     color: rgb(102, 102, 102);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .home-page .section-5 .col-md-10 {
@@ -292,6 +336,20 @@
 
 .home-page .section-5 .col-md-6 {
     padding: 10px;
+}
+
+.home-page .section-5 .row .col-md-12 .col-md-6 .heading{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 25.2px;
+}
+
+.home-page .section-5 .row .col-md-12 .col-md-6 h5 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.2px;
 }
 
 .home-page .section-5 img{
@@ -378,6 +436,12 @@
     padding: 0;
 }
 
+#section-5-bottom {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.2px;
+}
 
 /* ---------- Footer ----------- */
 
@@ -436,6 +500,17 @@
     color: rgb(171, 171, 171);
 }
 
+/* --------Media Query less than 1280px------------ */
+@media (max-width: 1280px)  {
+
+    .home-page .section-3 img {
+        padding-top: 20px;
+        width: 100vh;
+        height: 40vh;
+    }
+}
+
+/* --------Media Query less than 1024px------------ */
 
 @media (max-width: 1024px)  {
     body {
@@ -444,6 +519,9 @@
 
     .navbar {
         background: white;
+        width: 980px;
+        /* width: 100%; */
+        /* width:1024px; */
     }
 
     .navbar-items {
@@ -507,16 +585,15 @@
         display: block;
     }
 
-    .home-page .section-1 .row .section-1-content {
-        padding: 0px 0px 0px 0px;
-    }
-
     .home-page .section-1 {
-        height: 40vh;
+        height: 80vh;
+        width: 100%;
+        max-width: 1024px;
+       
     }
 
-    .home-page .section-1 .row .section-1-content .section-1-inner {
-        padding: 0px 60px 0px 60px;
+    .home-page .section-1 .row .section-1-content {
+        padding: 0px 70px 0px 70px;
     }
 
     .home-page .section-1 .section-1-content-paragraph p{ 
@@ -531,19 +608,19 @@
     /* --------Section 2 --------- */
 
     .home-page .section-2 {
-        height: 65vh;
+        height: 100vh;
         padding: 80px 0px 40px 0px;
     }
     
     .home-page .section-2 img{
         width: 700px;
-        height: 550px;
+        height: 450px;
     }
 
     /* ---------- Section 3 ----------- */
 
     .home-page .section-3 {
-        height: 50vh;
+        height: 70vh;
     } 
 
     .home-page .section-3 p {
@@ -552,9 +629,158 @@
 
     .home-page .section-3 img {
         padding-top: 20px;
-        width: 60vh;
-        height: 25vh;
+        width: 80vh;
+        height: 35vh;
     }
+
+    /* --------Section 4------ */
+
+    .home-page .section-4 .col-md-4{
+        width: 260px;
+        height: 210px;
+        margin-left: 0px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .home-page .section-4 .col-md-4 .card .front img {
+        width: 180px;
+        height: 140px;
+    }
+
+    .home-page .section-4 .row .col-md-4 .card .back p {
+        font-size: 11px;
+    }
+
+    /* --------Section 5------ */
+
+    .home-page .section-5 {
+        width: 100%;  
+    }
+
+    .home-page .section-5 .row .col-md-12  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-5 img{
+        width: 380px;
+        height: 380px;
+        margin-top: 10px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 320px;
+        height: 75px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 .card .front {
+        padding-top: 15px;
+    }
+
+    /* --------Footer -------- */
+
+    .home-page .footer .row .col-md-2, .social-media-links {
+        display: none;
+    }
+}
+
+/* --------Media Query less than 915px------------ */
+
+@media (max-width: 915px) {
+      /* -----Section 4--------- */
+
+      .home-page .section-4 .row {
+        margin-left: 20px;
+    }
+
+    .home-page .section-4 .col-md-4{
+        width: 260px;
+        height: 210px;
+        margin-left: 0px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    /* -----Section-5------ */
+
+    .home-page .section-5 {
+        width: 100%;  
+    }
+
+    .home-page .section-5 .row .col-md-12  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-5 img{
+        width: 380px;
+        height: 380px;
+        margin-top: 10px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 350px;
+        height: 75px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 .card .front {
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 .card .back p {
+        font-size: 12px;
+    }
+}
+
+
+/* --------Media Query less than 820px------------ */
+
+@media (max-width: 825px) {
+
+     /* -----Section 4--------- */
+
+    .home-page .section-4 .col-md-4{
+        width: 240px;
+        height: 210px;
+    }
+
+    /* -----Section-5------ */
+
+    .home-page .section-5 {
+        width: 100%;
+        /* height: 200vh;  */
+    }
+
+    .home-page .section-5 .row .col-md-12 .row {
+        width: 100%;
+    }
+
+    .home-page .section-5 .col-md-6 {
+        padding:0px 15px 0px 0px;
+    }
+
+    .home-page .section-5 img{
+        width: 350px;
+        height: 380px;
+        margin-top: 10px;
+    }
+    
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 110%;
+        height: 75px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 .card .front {
+        padding-top: 20px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* --------Media Query less than 770px------------ */
+
+@media (max-width: 770px) {
 
     /* ---------- Section 4 ----------- */
 
@@ -571,9 +797,6 @@
     /* ---------- Section 5 ----------- */
     .home-page .section-5 .row .col-md-12 .section-5-content {
         padding: 10px 100px 0px 100px;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 22px;
     }
 
     .home-page .section-5 .row .col-md-12 .row {
@@ -615,17 +838,480 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 22.1px;
+    }   
+}
+
+/* --------Media Query less than 545px------------ */
+
+@media (max-width: 545px) {
+    .navbar {
+        background: black;
+        height: 75px;
+        width: 100%;
     }
 
-    /* --------Footer -------- */
-
-    .home-page .footer .row .col-md-2, .social-media-links {
+    .navbar .content1 .search, .authentication, .contact {
         display: none;
     }
 
+    .navbar .icon i {
+        color: white;
+    }
+
+    .navbar .content2 {
+        padding-top: 20px;
+    }
+
+    .navbar .content2 .logo img {
+        width: 85px;
+        height: 30px;
+    }
+
+    .navbar-items {
+        margin-top: 75px;
+    }
+
+    .home-page {
+        padding-top: 100px;
+    }
+
+    /* ------Section-1------ */
+
+    .home-page .section-1 {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .home-page .section-1 .row .section-1-content {
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-1 .row .section-1-content ul {
+        text-align: left;
+    }
+
+    .home-page .section-1 .row .section-1-content ul li {
+        padding: 5px 25px 5px 25px;
+        margin-left: 15px;
+    }
+
+    /* ------Section-2------ */
+    .home-page .section-2 {
+        height: 85vh;
+    }
+    
+    .home-page .section-2 img{
+        width: 500px;
+        height: 450px;
+    }
+
+     /* ------Section-3------ */
+
+    .home-page .section-3 {
+        padding: 50px 0px 50px 0px;
+        height: 66vh;
+    } 
+
+    .home-page .section-3 img {
+        padding-top: 20px;
+        width: 70vh;
+        height: 30vh;
+    }
+
+    /* ---------- Section 4 ----------- */
+
+    .home-page .section-4 .col-md-4 {
+        margin: 20px 100px 20px 80px;
+    }
+
+    /* ---------- Section 5 ----------- */
+
+    .home-page .section-5 img{
+        width: 480px;
+        height: 380px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 480px;
+        margin: 10px 10px 10px 15px;
+    }
+    
 }
 
-@media (min-width: 900px) and (max-width: 1024px)   {
+/* --------Media Query less than 415px------------ */
+
+@media (max-width: 415px) {
+    body {
+        overflow-x: hidden;
+        
+    }
+
+    .navbar {
+        height: 75px;
+        width: 100%;
+        max-width: 412px;
+    }
+
+    /* ------Section-1------- */
+
+    .home-page .section-1 {
+        height: 70vh;
+        width: 380px;
+        /* background-color: black; */
+    }
+
+    .home-page .section-1 .row .section-1-content {
+        /* text-align: left;  */
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-1 .row .section-1-content img {
+        margin: 0px 0px 20px 40px;
+    }
+    
+    .home-page .section-1 .row .section-1-content .section-1-inner {
+        padding: 0px 0px 0px 25px;
+    }
+
+    .home-page .section-1 .row .section-1-content .section-1-inner h3 {
+        font-size: 18px;
+    }
+
+    .home-page .section-1 .section-1-content-paragraph p{
+        font-size: 12px;
+    }
+
+    .home-page .section-1 .row .section-1-content ul {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 40px 0px 10px;
+        text-transform: uppercase;
+    }
+
+    .home-page .section-1 .row .section-1-content ul li {
+        width: 50%;
+        margin: 0px 10px 20px 55px;
+        
+    }
+
+    /* ------Section-2------ */
+
+    .home-page .section-2 img{
+        width: 350px;
+        height: 340px;
+    }
+
+    /* ------Section-3------ */
+
+    .home-page .section-3 img {
+        padding-top: 20px;
+        width: 380px;
+        height: 25vh;
+    }
+
+    /* ------Section-4------ */
+
+    .home-page .section-4 .col-md-4 {
+        width: 350px;
+        /* height: 250px; */
+        margin-left: 35px;
+    }
+
+    /* ------Section-5------ */
+
+    .home-page .section-5 {
+        height: 150vh;
+        width: 412px;
+        /* background-color: black; */
+    }
+
+    .home-page .section-5 .row .col-md-12{
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-5 .row .col-md-12 .section-5-content {
+        padding: 10px 15px 0px 15px;
+    }
+
+    .home-page .section-5 img{
+        width: 360px;
+        height: 370px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 390px;
+        height: 75px;
+        margin: 0px 0px 10px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* --------Media Query less than 380px------------ */
+
+@media (max-width: 380px) {
+    body {
+        overflow-x: hidden;
+    }
+    /* -----Navbar------ */
+  
+    .navbar .content2 .logo img {
+        width: 85px;
+        height: 30px;
+    }
+
+    .home-page {
+        padding-top: 100px;
+    }
+
+    /* ----section-1-------- */
+
+    .home-page .section-1 {
+        height: 90vh;
+        width: 360px;
+        /* background-color: black; */
+    }
+
+    /* -------Section-2 -------- */
+
+    .home-page .section-2 {
+        height: 70vh;
+    }
+
+    .home-page .section-2 img{
+        width: 350px;
+        height: 340px;
+    }
+
+    /* -------Section-3 -------- */
+
+    .home-page .section-3 {
+        height: 65vh;
+    }
+
+    .home-page .section-3 img {
+        padding-top: 20px;
+        width: 45vh;
+        height: 25vh;
+    }
+
+    /* ------Section-4--------- */
+
+    .home-page .section-4 {
+        padding: 50px 0px 80px 0px;
+        /* margin-bottom: 250px; */
+    }
+
+    .home-page .section-4 .col-md-4 {
+        position: center;
+        margin: 20px 120px 20px 15px;
+    }
+
+    /* ------Section-5--------- */
+
+    .home-page .section-5 {
+        height: 195vh;
+        width: 360px;
+        /* background-color: black; */
+    }
+
+    .home-page .section-5 .row .col-md-12{
+        /* text-align: left;  */
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-5 .row .col-md-12 .section-5-content {
+        padding: 10px 15px 0px 15px;
+    }
+
+    .home-page .section-5 img{
+        width: 350px;
+        height: 370px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 330px;
+        height: 75px;
+        /* margin: 10px 10px 10px 10px;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .home-page .footer .row .copyright {
+        font-size: 11.7px;
+        font-weight: 400;
+        line-height: 18.7167px;
+    }
 
 }
 
+/* --------Media Query less than 360px------------ */
+
+@media (max-width: 360px)   {
+    /* -----Section-1-------- */
+
+    .home-page .section-1 .row .section-1-content img {
+        margin: 0px 0px 20px 10px;
+    }
+    
+    .home-page .section-1 .row .section-1-content .section-1-inner {
+        padding: 0px 20px 0px 20px;
+    }
+
+    /* -----Section-2-------- */
+
+    .home-page .section-2 {
+        height: 60vh;
+    }
+
+    .home-page .section-2 img{
+        width: 330px;
+        height: 280px;
+    }
+
+    /* -----Section-3-------- */
+
+    .home-page .section-3 img {
+        padding-top: 20px;
+        width: 42vh;
+        height: 20vh;
+    }
+
+    /* -----Section-4-------- */
+    .home-page .section-4 .col-md-4{
+        width: 320px;
+        height: 250px;
+        margin-left: 20px;
+    }
+
+     /* -----Section-5-------- */
+
+    .home-page .section-5 {
+        height: 170vh;
+    }
+
+
+    .home-page .section-5 img{
+        width: 330px;
+        height: 310px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 320px;
+        height: 75px;
+    }
+   
+}
+
+/* --------Media Query less than 280px------------ */
+
+@media (max-width: 280px)   {
+    body {
+        width: 280px;
+        max-width: 280px;
+    }
+    /* ------Section-1------- */
+
+    .home-page .section-1 {
+        width: 280px;
+        height: 100vh;
+        margin-bottom: 70px;
+    }
+
+    .home-page .section-1 .row .section-1-content {
+        /* text-align: left;  */
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-1 .row .section-1-content img {
+        margin: 0px 0px 20px 0px;
+        width: 230px;
+        height: 45px;
+    }
+
+    .home-page .section-1 .row .section-1-content ul { 
+        margin: 30px 40px 30px 40px;
+    }
+
+    .home-page .section-1 .row .section-1-content ul li {
+        width: 70%;
+        padding: 5px 10px 5px 15px;
+        margin-left: 15px;
+    }
+
+    /* -----Section 2--------- */
+
+    .home-page .section-2 img{
+        width: 250px;
+        height: 240px;
+    }
+
+    /* -----Section 3--------- */
+
+    .home-page .section-3 img {
+        width: 40vh;
+        height: 20vh;
+    }
+
+    /* -----Section 4--------- */
+
+    .home-page .section-4 .col-md-4{
+        width: 240px;
+        height: 220px;
+        margin-left: 20px;
+    }
+
+    .home-page .section-4 .col-md-4 .card .front img {
+        width: 180px;
+        height: 140px;
+    }
+
+    /* -----Section 5--------- */
+
+    .home-page .section-5 {
+        width: 280px;
+        height: 200vh; 
+    }
+
+    .home-page .section-5 .row .col-md-12  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-page .section-5 .row .col-md-12 .section-5-content {
+        padding: 10px 15px 0px 15px;
+        margin: 0;
+    }
+
+    .home-page .section-5 img{
+        width: 260px;
+        height: 250px;
+    }
+
+    .home-page .section-5 .col-md-6 .row .col-md-2 {
+        width: 255px;
+        height: 75px;
+        
+    }
+
+    .home-page .footer .row .col-md-2 p {
+        color: #fff;
+        font-size: 11px;
+    }
+
+    /* ---Footer------- */
+    .home-page .footer .row .copyright {
+        font-size: 10px;
+       
+    }
+    
+
+}
