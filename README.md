@@ -6,14 +6,18 @@
 <ul>
     <li>Sign in and out of the webpage</li>
     <li>View a webpage similar to Bitnine's official website https://bitnine.net/</li>
-   
 <ul>
+
+
+You can view the project here:
+https://bitnine-render-app.onrender.com/
 
 
 ## Set-up and Installation
 ###     Prerequisites
         - Python 3.10
         - Ubuntu software
+
 
 You can run the project locally by following the steps below:
 <ul>
