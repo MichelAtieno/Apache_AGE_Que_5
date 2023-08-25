@@ -8,14 +8,19 @@
                 <ul>
                     {% if user.is_authenticated %}
                     <li>
-                        <a href="{% url 'logout' %}">
+                        <a href="{% url 'apache_age_app:logout' %}">
                             Logout
                         </a>
                     </li>
                     {% else %}
                     <li>
-                        <a href="{% url 'login' %}">
+                        <a href="{% url 'apache_age_app:login' %}">
                             Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'apache_age_app:register' %}">
+                            Register
                         </a>
                     </li>
                     {% endif %}

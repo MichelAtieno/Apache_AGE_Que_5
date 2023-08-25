@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, login_user, logout_user
+from .views import home, login_user, logout_user, register_user
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -9,6 +9,7 @@ urlpatterns = [
     path('', home, name="home"),
     path('login_user',login_user, name="login"),
     path('logout_user',logout_user, name="logout"),
+    path('register_user',register_user, name="register")
 ]
 
 if settings.DEBUG:
