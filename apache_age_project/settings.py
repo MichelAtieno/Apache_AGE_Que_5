@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apache_age_app',
-    'bootstrap5',
     'fontawesome_free',
 ]
 
