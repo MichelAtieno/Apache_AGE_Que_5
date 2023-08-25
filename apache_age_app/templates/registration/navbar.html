@@ -1,0 +1,41 @@
+<nav class="navbar" style="width: 100%;">
+    <div class="content" style="display: flex; flex-direction: row;">
+
+        <div class="logo">
+            <a href="{% url 'apache_age_app:home' %}">
+                <img class="for_default" src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png" alt="" class="img-fluid">
+            </a>
+        </div>
+        <div class="authentication" style="padding-top: 25px; justify-content: end;">
+            <ul>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="{% url 'apache_age_app:logout' %}">
+                        Logout
+                    </a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="{% url 'apache_age_app:login' %}">
+                        Login /
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'apache_age_app:register' %}" id="register">
+                        Register
+                    </a>
+                </li>
+                {% endif %}
+            
+            </ul>
+        </div>
+           
+            
+          
+            
+
+    </div>
+
+        
+    </div>
+</nav>

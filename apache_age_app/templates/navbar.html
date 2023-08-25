@@ -8,14 +8,19 @@
                 <ul>
                     {% if user.is_authenticated %}
                     <li>
-                        <a href="{% url 'logout' %}">
+                        <a href="{% url 'apache_age_app:logout' %}">
                             Logout
                         </a>
                     </li>
                     {% else %}
                     <li>
-                        <a href="{% url 'login' %}">
-                            Login
+                        <a href="{% url 'apache_age_app:login' %}">
+                            Login /
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'apache_age_app:register' %}" id="register">
+                            Register
                         </a>
                     </li>
                     {% endif %}
@@ -58,7 +63,7 @@
 
         <div class="content2">
             <div class="logo">
-                <a href="#">
+                <a href="{% url 'apache_age_app:home' %}">
                     <img class="for_default" src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png" alt="">
                 </a>
             </div>
@@ -93,7 +98,7 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Company</a></li>
                     <li><a href="#">IR</a></li>
-                    <li><a href="#" id="try_free">Try Free</a></li>
+                    <li><a href="#" id="try_free" type="button" class="btn btn-primary">Try Free</a></li>
                 </ul>
                 
             </div>
