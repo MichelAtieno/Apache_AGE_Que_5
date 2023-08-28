@@ -3,7 +3,10 @@
 
 
     
-    <div class="container" style="padding-top: 150px; margin-left: 20px; text-align:left">
+    <div class="container register-page">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
         <h1>Register User</h1>
         {% if form.errors %}
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -14,14 +17,18 @@
           </div>
       {% endif %}
         <br>
-        <div class="shadow bg-body rounded p-4 mb-5">
+        <div class="shadow bg-body rounded p-2 mb-2">
             <form action="{% url 'apache_age_app:register' %}" method=POST>
                 {% csrf_token %}
                 {{ form.as_p }}
-                <br>
-                <br>
+                
+                
                 <input type="submit" value="Submit" class="btn btn-secondary">
             </form>
         </div>
+        </div>
+        
+        <div class="col-md-3"></div>
+      </div>
     </div>
 {% endblock %}  
