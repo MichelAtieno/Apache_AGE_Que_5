@@ -99,6 +99,24 @@
                     <li><a href="#">Company</a></li>
                     <li><a href="#">IR</a></li>
                     <li><a href="#" id="try_free" type="button" class="btn btn-primary">Try Free</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="dropdown-authentication">
+                        <a href="{% url 'apache_age_app:logout' %}">
+                            Logout
+                        </a>
+                    </li>
+                    {% else %}
+                    <li class="dropdown-authentication">
+                        <a href="{% url 'apache_age_app:login' %}">
+                            Login
+                        </a><a href="{% url 'apache_age_app:register' %}" id="register">
+                            Register
+                        </a>
+                    </li>
+                    <li class="dropdown-authentication">
+                        
+                    </li>
+                    {% endif %}
                 </ul>
                 
             </div>
