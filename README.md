@@ -2,7 +2,7 @@
 ### By Michel Atieno, created on August 2023.
 
 ### Description
-As a user of the application, you are able to:
+    As a user of the application, you are able to:
     - Sign in and out of the webpage
     - View a webpage similar to Bitnine's official website https://bitnine.net/
 
