@@ -18,7 +18,7 @@ You can view project on https://bitnine-render-app.onrender.com/
     You can run the project locally by following the steps below:
     - Clone Project
     - Create and activate Virtual Environment
-    - Prepare environment variables. You can find the modules required for project on the requirments.txt file
+    - Prepare environment variables. You can find the modules required for project on the requirements.txt file
     - Run Database Migrations
     - Run the app in development
     - Open the browser on `https://localhost:8000/` by running 'python3.10 manage.py runserver' on terminal        
