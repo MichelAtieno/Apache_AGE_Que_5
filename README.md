@@ -1,45 +1,41 @@
-# Apache-Age Question-5
-# By Michel Atieno, created on August 2023.
+## Apache-Age Question-5
+### By Michel Atieno, created on August 2023.
 
 ### Description
- As a user of the application, you are able to:
-<ul>
-    <li>Sign in and out of the webpage</li>
-    <li>View a webpage similar to Bitnine's official website https://bitnine.net/</li>
-<ul>
+As a user of the application, you are able to:
+    - Sign in and out of the webpage
+    - View a webpage similar to Bitnine's official website https://bitnine.net/
 
-### Website link
-You can view the project here:
-https://bitnine-render-app.onrender.com/
+####  Project Link
+You can view project on https://bitnine-render-app.onrender.com/ 
 
-
+### Website Routes
+    - / - Home page
+    - /login_user - Log in page
+    - /register_user - Registration page.
+   
 ## Set-up and Installation
-###     Prerequisites
-        - Python 3.10
-        - Ubuntu software
+    You can run the project locally by following the steps below:
+    - Clone Project
+    - Create and activate Virtual Environment
+    - Prepare environment variables. You can find the modules required for project on the requirments.txt file
+    - Run Database Migrations
+    - Run the app in development
+    - Open the browser on `https://localhost:8000/` by running 'python3.10 manage.py runserver' on terminal        
+
+###  Known bugs
+*** Currently finishing up on media queries.
 
 
-You can run the project locally by following the steps below:
-<ul>
-    <li>Clone Project</li>
-    <li>Create and activate Virtual Environment</li>
-    <li>Prepare environment variables. You can find the modules required for project on the requirments.txt file</li>
-    <li>Run Database Migrations</li>
-    <li>Run the app in development</li>
-    <li>Open the browser on `https://localhost:8000/` by running 'python3.10 manage.py runserver' on terminal</li>
-<ul>            
-
-## Known bugs
-Currently finishing up on media queries.
-
-## Technologies used
-    - Python 3.10 (Django Framework version 4.2)
+### Technologies used
+    - Python 3.10.6 (Django Framework)
     - Bootstrapv5
     - SQL
+    - Render
 
 
 ## Support and contact details
-Contact me on michelatieno23@gmail.com for any comments, reviews or advice.
+Contact me on michelatieno23@gmail.com for any comments, reviews or feedback.
 
 ### MIT License
 Copyright (c) **Michel Atieno**
