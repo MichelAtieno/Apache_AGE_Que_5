@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
     <div class="content">
         <div class="content1">
             <div class="search">
@@ -74,23 +74,6 @@
                 <ul>
                     <li>
                         <a href="#">Products </a>
-                        <!-- <ul>
-                            <li>
-                                <a href="#">Graph Database</a>
-                                <ul>
-                                    <li><a href="#">AgensGraph</a></li>
-                                    <li><a href="#">Apache AGE</a></li>
-                                    <li><a href="#">AG Cloud</a></li>
-                                    <li><a href="#">Visualization and Analytics</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Relational Database </a>
-                                <ul>
-                                    <li><li><a href="#">AgensSQL</a></li></li>
-                                </ul>
-                            </li>
-                        </ul> -->
                     </li>
                     <li><a href="#">Use Cases</a></li>
                     <li><a href="#">Services</a></li>
@@ -152,4 +135,206 @@
         this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
 
+</script> -->
+{% load i18n %}
+<header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Select Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                    
+                  {% for lang in languages %}
+                    <li>
+                        <a class="dropdown-item" href="/{{ lang.code}}/">
+                            {{ lang.name_local }}
+                        </a>
+                    </li>
+                  {% endfor %}
+                  
+                </ul>
+            </div>
+            <ul class="social-media-links">
+                <li class="search">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <div class="input">
+                        <input type="text" placeholder="Search" id="mysearch">
+                    </div>
+                    <span class="clear">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                </li>
+                <li class="">
+                    <a class="" target="_blank" href="https://github.com/bitnine-oss/agensgraph">
+                        <span><i class="fab fa-github"></i></span>
+                    </a>
+                </li>
+                
+                <li class="">
+                    <a class="" target="_blank" href="https://www.youtube.com/channel/UCBJNYamALEqrfxiOCgYyP2g/featured?view_as=subscriber">
+                        <span><i class="fab fa-youtube"></i></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="" target="_blank" href="https://www.linkedin.com/company/bitnineglobal/">
+                        <span><i class='fab fa-linkedin-in'></i></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="" target="_blank" href="https://www.facebook.com/bitninesns/">
+                        <span><i class="fab fa-facebook"></i></span>
+                    </a>
+                </li> 
+                <li class=""> 
+                    <a class="" target="_blank" href="https://blog.naver.com/bitnine9">
+                        <span> <i class="fab fa-medium"></i></span>
+                    </a>
+                </li>   
+                {% if user.is_authenticated %}
+                <li class="authentication">
+                        <a href="{% url 'apache_age_app:logout' %}">
+                            Logout
+                        </a>
+                </li>
+                {% else %}
+                <li class="authentication">
+                    <a href="{% url 'apache_age_app:login' %}">
+                        Login /
+                    </a>
+                    <a href="{% url 'apache_age_app:register' %}" id="register">
+                        Register
+                    </a>
+                </li>
+                {% endif %}  
+            </ul>
+        </div>
+        <div class="nav-content">
+            <a href="{% url 'apache_age_app:home' %}"  class="logo">
+                <img class="img-fluid" src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png" alt="">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link">{% translate "Products" %}</a>
+                    <ul>
+                        <li class="nav-item"><a class="nav-link">{% translate "Graph Database" %}</a>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link">{% translate "AgensGraph" %}</a></li>
+                                <li class="nav-item"><a class="nav-link">{% translate "ApacheAGE" %}</a></li>
+                                <li class="nav-item"><a class="nav-link">{% translate "AG Cloud" %}</a></li>
+                                <li class="nav-item"><a class="nav-link">{% translate "Visualization and Analytics" %}</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li>
+                            <a class="nav-link">{% translate "Relational Database" %}</a>
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link">{% translate "AgensSQL" %}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">{% translate "Services" %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">{% translate "Resources" %}</a>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link">{% translate "Documentation" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">{% translate "Learn" %}</a>
+                        </li>
+                    </ul>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link">{% translate "Blog" %}</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">IR</a>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Link 2</a>
+                        </li>
+                    </ul>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="try_free" type="button" class="btn btn-primary">Try Free</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown-authentication">
+                        <a href="{% url 'apache_age_app:logout' %}">
+                            Logout
+                        </a>
+                </li>
+                {% else %}
+                <li class="nav-item dropdown-authentication">
+                        <a href="{% url 'apache_age_app:login' %}">
+                            Login
+                        </a><a href="{% url 'apache_age_app:register' %}" id="register">
+                            Register
+                        </a>
+                </li>
+                    {% endif %}
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+        
+    </nav>
+</header>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+
+    const icon = document.querySelector(".icon");
+    const search = document.querySelector(".search");
+    const clearSearch = document.querySelector(".clear");
+
+    icon.onclick = function() {
+        search.classList.toggle("active");
+    }
+
+    clearSearch.onclick = function() {
+        document.getElementById('mysearch').value = '';
+        search.classList.remove("active");
+    }
+
+    const navbar = document.querySelector(".navbar");
+
+    window.onscroll = () => {
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
 </script>

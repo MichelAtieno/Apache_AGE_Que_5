@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.utils.translation import get_language, activate, gettext
 from .forms import RegisterUserForm
+
 
 # Create your views here.
 def home(request):

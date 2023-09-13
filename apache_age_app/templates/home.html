@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 <div class="home-page">
     <div class="container section-1">
@@ -10,18 +11,18 @@
             <div class="col-md-10 section-1-content">
                 <img src="https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png"  class="img-fluid" alt="">
                 <div class="section-1-inner">
-                    <h3>An integration of Bitnine's DB technology and PG expertise.</h3>
+                    <h3>{% translate "An integration of Bitnine's DB technology and PG expertise." %}</h3>
                     <div class="section-1-content-paragraph">
-                        <p>AgensSQL is an all-new relational DBMS based on PostgreSQL, with years of expertise and knowledge accumulated through database research and development.</p>
-                        <p>The enterprise package, along with AgensSQL engine, is an all-in-one solution that ensures the effeciency and scalability of data management.</p>
-                        <p>Get AgensSQL now for stable operation and management services at a reduced maintenance cost.</p>
+                        <p>{% translate "AgensSQL is an all-new relational DBMS based on PostgreSQL, with years of expertise and knowledge accumulated through database research and development." %}</p>
+                        <p>{% translate "The enterprise package, along with AgensSQL engine, is an all-in-one solution that ensures the effeciency and scalability of data management." %}</p>
+                        <p>{% translate "Get AgensSQL now for stable operation and management services at a reduced maintenance cost." %}</p>
                     </div>
                     
                 </div>
                 <ul>
-                    <li><a href="" type="button" class="btn btn-primary active">Contact</a></li>
-                    <li><a href="" type="button" class="btn btn-primary active">Brochure</a></li>
-                    <li><a href="" type="button" class="btn btn-primary active">Blog</a></li>
+                    <li><a href="" type="button" class="btn">Contact</a></li>
+                    <li><a href="" type="button" class="btn">{% translate "Brochure" %}</a></li>
+                    <li><a href="" type="button" class="btn">{% translate "Blog" %}</a></li>
                 </ul>
             </div>
             <div class="col-md-1">
@@ -38,18 +39,18 @@
 
     <br>
     <div class="section-3">
-        <h2>Key features</h2>
-        <p>Manage your data with Agens Enterprise Package.</p>
-        <p>Essential enterprise features such as high availability and sharding are provided</p>
+        <h2>{% translate "Key features" %}</h2>
+        <p>{% translate "Manage your data with Agens Enterprise Package." %}</p>
+        <p>{% translate "Essential enterprise features such as high availability and sharding are provided" %}</p>
         <img src="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png" class="img-fluid" alt="" srcset="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png 4584w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-300x118.png 300w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-768x302.png 768w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-1024x402.png 1024w, https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng-600x236.png 600w" sizes="(max-width: 4584px) 100vw, 4584px">
     </div>
     
 
     <br>
     <div class="section-4">
-        <h2>AgensSQL DB Engine</h2>
-        <h4>Enhanced Data Security</h4>
-        <p>AgensSQL is a PostgreSQL-based DBMS that guarantees optimal security and stability.</p>
+        <h2>{% translate "AgensSQL DB Engine" %}</h2>
+        <h4>{% translate "Enhanced Data Security" %}</h4>
+        <p>{% translate "AgensSQL is a PostgreSQL-based DBMS that guarantees optimal security and stability." %}</p>
       
         <div class="row">
             <div class="col-md-4">
@@ -59,9 +60,9 @@
                     </div>
                     <div class="back">
                         <ul>
-                            <li><p>user password policy reinforces login security</p></li>
-                            <li><p>excessive failed login attempts lock an account</p></li>
-                            <li><p>define rules for password complexity</p></li>
+                            <li><p>{% translate "user password policy reinforces login security" %}</p></li>
+                            <li><p>{% translate "excessive failed login attempts lock an account" %}</p></li>
+                            <li><p>{% translate "define rules for password complexity" %}</p></li>
                         </ul>            
                     </div>
                 </div>
@@ -75,9 +76,9 @@
                     </div>
                     <div class="back">
                         <ul>
-                            <li><p>enhanced data security of user personal information</p></li>
-                            <li><p>resolve privacy issues in preparation for security audits</p></li>
-                            <li><p>encryption or masking with unidentifiable special characters</p></li>
+                            <li><p>{% translate "enhanced data security of user personal information" %}</p></li>
+                            <li><p>{% translate "resolve privacy issues in preparation for security audits" %}</p></li>
+                            <li><p>{% translate "encryption or masking with unidentifiable special characters" %}</p></li>
                         </ul>            
                     </div>
                 </div>
@@ -91,9 +92,9 @@
                     </div>
                     <div class="back">
                         <ul>
-                            <li><p>monitors database activities and collects data</p></li>
-                            <li><p>traces object accessed or DDL & DML statements executed by a user</p></li>
-                            <li><p>records all actions in logs</p></li>
+                            <li><p>{% translate "monitors database activities and collects data" %}</p></li>
+                            <li><p>{% translate "traces object accessed or DDL & DML statements executed by a user" %}</p></li>
+                            <li><p>{% translate "records all actions in logs" %}</p></li>
                         </ul>            
                     </div>
                 </div>
@@ -106,27 +107,27 @@
     <div class="section-5">
         <div class="row">
             <div class="col-md-12">
-                <h2>Agens Enterprise Package</h2>
-                <p class="section-5-content">Agens Enterprise Package comes with a high availability management server that supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently.</p>
+                <h2>{% translate "Agens Enterprise Package" %}</h2>
+                <p class="section-5-content">{% translate "Agens Enterprise Package comes with a high availability management server that supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently." %}</p>
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="heading">Agens HA Manager</p>
-                        <h5><strong>HA Clustering</strong> - Failover/Failback, Load-balancing</h5>
+                        <p class="heading">{% translate "Agens HA Manager" %}</p>
+                        <h5><strong>{% translate "HA Clustering" %}</strong> - Failover/Failback, {% translate "Load-balancing" %}</h5>
                         <img src="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png" class="img-fluid" alt="">
-                        <p id="section-5-bottom">Replication</p>
+                        <p id="section-5-bottom">{% translate "Replication" %}</p>
                     </div>
                     <div class="col-md-6">
-                        <p><b>Agens Enterprise Manager</b></p>
+                        <p class="heading">{% translate "Agens Enterprise Manager" %}</p>
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="card">
                                     <div class="front">
-                                        <p>Backup/Restore</p>
+                                        <p>{% translate "Backup/Restore" %}</p>
                                     </div>
                                     <div class="back">
                                         <ul>
-                                            <li><p>provides a convenient interface for backup & restore</p></li>
-                                            <li><p>provides backup & restore features for DB and table objects</p></li>
+                                            <li><p>{% translate "provides a convenient interface for backup & restore" %}</p></li>
+                                            <li><p>{% translate "provides backup & restore features for DB and table objects" %}</p></li>
                                         </ul>            
                                     </div>
                                 </div>
@@ -135,12 +136,12 @@
                             <div class="col-md-2">
                                 <div class="card">
                                     <div class="front">
-                                        <p>DB Monitoring Dashboard</p>
+                                        <p>{% translate "DB Monitoring Dashboard" %}</p>
                                     </div>
                                     <div class="back">
                                         <ul>
-                                            <li><p>monitors real-time session & transaction lock</p></li>
-                                            <li><p>provides status for server CPU & memory</p></li>
+                                            <li><p>{% translate "monitors real-time session & transaction lock" %}</p></li>
+                                            <li><p>{% translate "provides status for server CPU & memory" %}</p></li>
                                         </ul>            
                                     </div>
                                 </div>
@@ -148,12 +149,12 @@
                             <div class="col-md-2">
                                 <div class="card">
                                     <div class="front">
-                                        <p>Schedule Management</p>
+                                        <p>{% translate "Schedule Management" %}</p>
                                     </div>
                                     <div class="back">
                                         <ul>
-                                            <li><p>provides module for script, SQL job and scheduling management</p></li>
-                                            <li><p>provides UX dedicated to scheduling</p></li>
+                                            <li><p>{% translate "provides module for script, SQL job and scheduling management" %}</p></li>
+                                            <li><p>{% translate "provides UX dedicated to scheduling" %}</p></li>
                                         </ul>            
                                     </div>
                                 </div>
@@ -161,12 +162,12 @@
                             <div class="col-md-2">
                                 <div class="card">
                                     <div class="front">
-                                        <p>Database Audit</p>
+                                        <p>{% translate "Database Audit" %}</p>
                                     </div>
                                     <div class="back">
                                         <ul>
-                                            <li><p>enables auditing via user interface</p></li>
-                                            <li><p>view audit results via user interface</p></li>
+                                            <li><p>{% translate "enables auditing via user interface" %}</p></li>
+                                            <li><p>{% translate "view audit results via user interface" %}</p></li>
                                         </ul>            
                                     </div>
                                 </div>
@@ -174,12 +175,12 @@
                             <div class="col-md-2">
                                 <div class="card">
                                     <div class="front">
-                                        <p>SQL Monitoring</p>
+                                        <p>{% translate "SQL Monitoring" %}</p>
                                     </div>
                                     <div class="back">
                                         <ul>
-                                            <li><p>collects query statistics required for performance analysis</p></li>
-                                            <li><p>extracts monitoring results in query</p></li>
+                                            <li><p>{% translate "collects query statistics required for performance analysis" %}</p></li>
+                                            <li><p>{% translate "extracts monitoring results in query" %}</p></li>
                                         </ul>            
                                     </div>
                                 </div>
@@ -187,12 +188,12 @@
                             <div class="col-md-2">
                                 <div class="card">
                                     <div class="front">
-                                        <p>Performance Management</p>
+                                        <p>{% translate "Performance Management" %}</p>
                                     </div>
                                     <div class="back">
                                         <ul>
-                                            <li><p>monitors and collects operation status and statistical data</p></li>
-                                            <li><p>provides status reports required for improving performance</p></li>
+                                            <li><p>{% translate "monitors and collects operation status and statistical data" %}</p></li>
+                                            <li><p>{% translate "provides status reports required for improving performance" %}</p></li>
                                         </ul>            
                                     </div>
                                 </div>

@@ -1,4 +1,4 @@
-<nav class="navbar" style="width: 100%;">
+<!-- <nav class="navbar" style="width: 100%;">
     <div class="content" style="display: flex; flex-direction: row;">
 
         <div class="logo">
@@ -29,14 +29,135 @@
             
             </ul>
         </div>
-           
-            
-          
-            
-
     </div>
+    </div>
+</nav> -->
 
+
+<!-- <nav>
+    <div class="logo">
+        <a href="{% url 'apache_age_app:home' %}">
+            <img class="for_default" src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png" alt="" class="img-fluid">
+        </a>
+    </div>
+    <label for="btn" class="nav-icon">
+        <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+
+    <div>
+        <div class="icon cancel-btn">
+            <a><i class="fas fa-times"></i></a>
+        </div>
+        <ul>
+            <li>
+                <label for="btn-1" class="show">Products +</label>
+                <a href="#">Products </a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li>
+                        <a href="#">Graph Database <i class="fa fa-chevron-right"></i></a>
+                        <ul>
+                            <li><a href="#">AgensGraph</a></li>
+                            <li><a href="#">Apache AGE</a></li>
+                            <li><a href="#">AG Cloud</a></li>
+                            <li><a href="#">Visualization and Analytics</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Relational Database <i class="fa fa-chevron-right"></i></a>
+                        <ul>
+                            <li><a href="#">AgensSQL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Use Cases</a></li>
+            <li><a href="#">Services</a></li>
+            <li>
+                <label for="btn-2" class="show">Resources +</label>
+                <a href="#">Resources</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Learn</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li>
+                <label for="btn-3" class="show">Company +</label>
+                <a href="#">Company</a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="#">IR</a></li>
+            <li><a href="#" id="try_free" type="button" class="btn btn-primary">Try Free</a></li>
+            {% if user.is_authenticated %}
+            <li class="dropdown-authentication">
+                <a href="{% url 'apache_age_app:logout' %}">
+                    Logout
+                </a>
+            </li>
+            {% else %}
+            <li class="dropdown-authentication">
+                <a href="{% url 'apache_age_app:login' %}">
+                    Login
+                </a><a href="{% url 'apache_age_app:register' %}" id="register">
+                    Register
+                </a>
+            </li>
+            {% endif %}
+        </ul>
         
     </div>
-</nav>
+</nav> -->
+
+<nav>
+    <div class="menu-icon">
+       <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+       CodingNepal
+    </div>
+    <div class="nav-items">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Blogs</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Feedback</a></li>
+    </div>
+    <div class="search-icon">
+       <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+    </div>
+ 
+ </nav>
+
+ <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      cancelBtn.classList.add("show");
+    }
+ </script>
 
