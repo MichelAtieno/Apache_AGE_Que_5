@@ -5,6 +5,7 @@
     As a user of the application, you are able to:
     - Sign in and out of the webpage
     - View a webpage similar to Bitnine's official website https://bitnine.net/
+    - View webpage in English and Korean
 
 ####  Project Link
 You can view project on https://bitnine-render-app.onrender.com/ 
@@ -25,6 +26,9 @@ You can view project on https://bitnine-render-app.onrender.com/
 
 ###  Known bugs
 *** Currently finishing up on media queries.
+*** Re-styling Login and Register Page.
+*** Fixing navbar dropdown elements to be responsive.
+*** Adding email verification functionality for user identity.
 
 
 ### Technologies used
