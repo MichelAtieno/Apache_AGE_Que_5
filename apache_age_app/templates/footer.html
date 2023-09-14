@@ -1,11 +1,12 @@
+{% load i18n %}
 <div class="footer">
     <div class="row">
         <div class="col-md-2">
             <ul>
-                <li><b>PRODUCTS</b></li>
-                <li><a href="">Relational Database</a></li>
-                <li><a href="">Graph Database</a></li>
-                <li><a href="">Graph-based Solution</a></li>
+                <li><b>{% translate "PRODUCTS" %}</b></li>
+                <li><a href="">{% translate "Relational Database" %}</a></li>
+                <li><a href="">{% translate "Graph Database" %}</a></li>
+                <li><a href="">{% translate "Graph-based Solution" %}</a></li>
             </ul>
         </div>
         <div class="col-md-2">
@@ -15,38 +16,38 @@
         </div>
         <div class="col-md-2">
             <ul>
-                <li><a href=""><b>SERVICES</b></a></li>
+                <li><a href=""><b>{% translate "SERVICES" %}</b></a></li>
             </ul>
         </div>
         <div class="col-md-2">
             
             <ul>
-                <li><b>RESOURCES</b></li>
-                <li><a href="">Documentation</a></li>
-                <li><a href="">Learn</a></li>
+                <li><b>{% translate "RESOURCES" %}</b></li>
+                <li><a href="">{% translate "Documentation" %}</a></li>
+                <li><a href="">{% translate "Learn" %}</a></li>
             </ul>
         </div>
         <div class="col-md-2">
             <ul>
-                <li><a href=""><b>BLOG</b></a></li>
+                <li><a href=""><b>{% translate "BLOG" %}</b></a></li>
             </ul>
         </div>
         <div class="col-md-2">
             <ul>
                 <li><b>COMPANY</b></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">{% translate "About us" %}</a></li>
+                <li><a href="">{% translate "Contact" %}</a></li>
             </ul>
         </div>
         
     </div>
-    <div class="row">
-        <div class="col-md-6 copyright">
-            <p><i class="fa fa-copyright" aria-hidden="true"></i>
+    <div class=" " id="lower">
+    
+            <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>
             2023 by Bitnine Global Inc. All Rights Reserved.</p>
-        </div>
-        <div class="col-md-6 social-media-links">
-            <ul>
+       
+      
+            <ul class="social-media-links">
                 <li>
                     <a class="" target="_blank" href="https://github.com/bitnine-oss/agensgraph">
                         <i class="fab fa-github"></i>
@@ -76,6 +77,6 @@
                     <a href="" style="color: #fff; text-decoration: none;">CONTACT</a>
                 </li>
             </ul>
-        </div>
+        
     </div>
 </div>
