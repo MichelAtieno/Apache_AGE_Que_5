@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 10:57+0000\n"
+"POT-Creation-Date: 2023-09-14 05:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,12 @@ msgid "PRODUCTS"
 msgstr ""
 
 #: apache_age_app/templates/footer.html:7
-#: apache_age_app/templates/navbar.html:218
+#: apache_age_app/templates/navbar.html:234
 msgid "Relational Database"
 msgstr ""
 
 #: apache_age_app/templates/footer.html:8
-#: apache_age_app/templates/navbar.html:208
+#: apache_age_app/templates/navbar.html:224
 msgid "Graph Database"
 msgstr ""
 
@@ -49,12 +49,12 @@ msgid "RESOURCES"
 msgstr ""
 
 #: apache_age_app/templates/footer.html:26
-#: apache_age_app/templates/navbar.html:238
+#: apache_age_app/templates/navbar.html:254
 msgid "Documentation"
 msgstr ""
 
 #: apache_age_app/templates/footer.html:27
-#: apache_age_app/templates/navbar.html:241
+#: apache_age_app/templates/navbar.html:257
 msgid "Learn"
 msgstr ""
 
@@ -98,7 +98,7 @@ msgid "Brochure"
 msgstr ""
 
 #: apache_age_app/templates/home.html:25
-#: apache_age_app/templates/navbar.html:246
+#: apache_age_app/templates/navbar.html:262
 msgid "Blog"
 msgstr ""
 
@@ -269,48 +269,44 @@ msgstr ""
 msgid "provides status reports required for improving performance"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:206
+#: apache_age_app/templates/navbar.html:222
 msgid "Products"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:210
+#: apache_age_app/templates/navbar.html:226
 msgid "AgensGraph"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:211
+#: apache_age_app/templates/navbar.html:227
 msgid "ApacheAGE"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:212
+#: apache_age_app/templates/navbar.html:228
 msgid "AG Cloud"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:213
+#: apache_age_app/templates/navbar.html:229
 msgid "Visualization and Analytics"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:221
+#: apache_age_app/templates/navbar.html:237
 msgid "AgensSQL"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:232
+#: apache_age_app/templates/navbar.html:248
 msgid "Services"
 msgstr ""
 
-#: apache_age_app/templates/navbar.html:235
+#: apache_age_app/templates/navbar.html:251
 msgid "Resources"
 msgstr ""
 
-#: apache_age_project/settings.py:144
+#: apache_age_project/settings.py:146
 msgid "English"
 msgstr ""
 
-#: apache_age_project/settings.py:145
+#: apache_age_project/settings.py:147
 msgid "Korean"
-msgstr ""
-
-#: apache_age_project/settings.py:146
-msgid "French"
 msgstr ""
 
 #: virtual/lib/python3.10/site-packages/django/contrib/messages/apps.py:15
