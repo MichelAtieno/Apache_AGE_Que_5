@@ -25,10 +25,10 @@ You can view project on https://bitnine-render-app.onrender.com/
     - Open the browser on `https://localhost:8000/` by running 'python3.10 manage.py runserver' on terminal        
 
 ###  Known bugs
-*** Currently finishing up on media queries.
-*** Re-styling Login and Register Page.
-*** Fixing navbar dropdown elements to be responsive.
-*** Adding email verification functionality for user identity.
+    *** Currently finishing up on media queries.
+    *** Re-styling Login and Register Page.
+    *** Fixing navbar dropdown elements to be responsive.
+    *** Adding email verification functionality for user identity.
 
 
 ### Technologies used
