@@ -227,6 +227,10 @@
     width: 220px; 
 }
 
+.navbar.sticky ul li ul li ul {
+    margin-top: -9px;
+}
+
 .navbar ul li:focus-within > ul,
 .navbar ul li:hover > ul {
     display: initial;
@@ -331,24 +335,60 @@
     overflow-x: hidden;
 }
 
+/* ---------- Login Page ----------- */
+
 .login-page {
-    padding-top: 150px;
-    margin-left: 50px;
+    padding-top: 180px;
+    width: 100%;
 }
 
-.login-page .col-md-8 h1 {
+
+.form-box {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.form-box h2 {
     text-align: center;
 }
+
+.form-details {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.form-content {
+    width: 60%;
+}
+
+.form-box .bottom-link {
+    text-align: left;
+}
+
+/* ---------- Register Page----------- */
 
 .register-page {
-    padding-top: 150px;
-    margin-left: 20px;
+    padding-top: 180px;
+    /* margin-left: 20px; */
     /* text-align: left */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.register-page .col-md-6 h1 {
+#form-detail {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    /* justify-content: center; */
+    width: 35%;
 }
+
 
 .home-page .section-1 {
     height: 80vh;
@@ -1090,6 +1130,10 @@
     .search {
         display: none;
     }
+
+    .login-page .footer {
+        bottom: 0;
+    }
 }
 
 /* --------Media Query less than 915px------------ */
@@ -1748,7 +1792,7 @@
 
 /* --------Media Query less than 540px------------ */
 
-@media (max-width: 540px) and (max-height: 720px) {
+@media (max-width: 540px) {
     /* -------- Navbar ------------ */
     
     .navbar {
@@ -1782,7 +1826,30 @@
         padding-top: 130px;
     }
 
+    /* -------- Login Page ------------ */
+    .form-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-details,
+    #form-detail {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
     
+    .form-content {
+        width: 90%;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .form-box .bottom-link {
+        text-align: center;
+    }
+    
+
     /* -------- Section-1 ------------ */
 
     .home-page .section-1 {
@@ -1858,6 +1925,11 @@
 @media (max-width: 428px) {
     .login-page {
         margin-left: 0;
+        
+    }
+
+    .form-content {
+        margin-left: 20px;
     }
 
     .register-page {
@@ -2646,6 +2718,15 @@
     .navbar .nav-menu.active {
         height: 72vh;
     }
+
+    .form-content {
+        margin-left: 15px;
+    }
+
+    .forgot-pass {
+        font-size: 14px;
+    }
+
     /* ------Section-1------- */
 
     .home-page .section-1 {
