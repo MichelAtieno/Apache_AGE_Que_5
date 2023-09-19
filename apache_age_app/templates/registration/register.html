@@ -1,41 +1,45 @@
-{% extends './base.html' %}
+{% extends '../base.html' %}
 {% load static %}
 {% load i18n %}
 {% block content %}
 
-
-    
-    <div class="container register-page">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-        <h1>Register User</h1>
-        {% if form.errors %}
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            There was an error with your form.....
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <div class="register-page">
+      
+      <div class="form-box">
+          <div id="form-detail">
+            <h2>Welcome</h2>
+            <p>You can create an account here</p>
           </div>
-      {% endif %}
-        <br>
-        <div class="shadow bg-body rounded p-2 mb-2">
-            <form action="{% url 'apache_age_app:register' %}" method=POST>
-                {% csrf_token %}
-                {{ form.as_p }}
-                
-                
-                <input type="submit" value="Submit" class="btn btn-secondary">
-            </form>
-        </div>
-        </div>
-        
-        <div class="col-md-3"></div>
+          <div class="form-content">
+              <h2>Register an account</h2>
+              {% if form.errors %}
+                  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    There was an error with your form.....
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              {% endif %}
+              <br>
+              <div class="shadow bg-body rounded p-2 mb-2">
+                <form action="{% url 'apache_age_app:register' %}" method=POST>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    
+                    
+                    <input type="submit" value="Submit" class="btn btn-secondary">
+                </form>
+            </div>
+              <div class="bottom-link">
+                  Already have an account?
+                  <a href="#">Sign in</a>
+              </div>
+          </div>
       </div>
-    
-    </div>
-    <br>
-    {% include "../footer.html" %}
+      <br>
+           
+</div>
+   
     
     
 
